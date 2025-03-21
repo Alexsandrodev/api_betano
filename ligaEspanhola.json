@@ -1,0 +1,724 @@
+{
+    "ultimaAtualizacao": "16/03/2025 01:37:13",
+    "Linhas": {
+        "20": [
+            {
+                "TimeA": "Vallecano",
+                "TimeB": "Valladolid",
+                "Horario": "20:02",
+                "Hora": "20",
+                "Minuto": "02",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "Barcelona White",
+                "Horario": "20:05",
+                "Hora": "20",
+                "Minuto": "05",
+                "Resultado_HT": "4 - 0",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Sevilla Green",
+                "TimeB": "Bilbao",
+                "Horario": "20:08",
+                "Hora": "20",
+                "Minuto": "08",
+                "Resultado_HT": "4 - 0",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Sevilla Green",
+                "TimeB": "Vallecano",
+                "Horario": "20:11",
+                "Hora": "20",
+                "Minuto": "11",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Sevilla Green",
+                "TimeB": "Villareal",
+                "Horario": "20:14",
+                "Hora": "20",
+                "Minuto": "14",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Valencia",
+                "TimeB": "Barcelona Blue",
+                "Horario": "20:17",
+                "Hora": "20",
+                "Minuto": "17",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Valencia",
+                "TimeB": "Sevilla Red",
+                "Horario": "20:20",
+                "Hora": "20",
+                "Minuto": "20",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "Madrid Red",
+                "Horario": "20:23",
+                "Hora": "20",
+                "Minuto": "23",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "Vigo",
+                "Horario": "20:26",
+                "Hora": "20",
+                "Minuto": "26",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Barcelona White",
+                "TimeB": "Mallorca",
+                "Horario": "20:29",
+                "Hora": "20",
+                "Minuto": "29",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Villareal",
+                "TimeB": "Mallorca",
+                "Horario": "20:32",
+                "Hora": "20",
+                "Minuto": "32",
+                "Resultado_HT": "3 - 1",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Bilbao",
+                "TimeB": "Villareal",
+                "Horario": "20:35",
+                "Hora": "20",
+                "Minuto": "35",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "San Sebastian",
+                "TimeB": "Villareal",
+                "Horario": "20:38",
+                "Hora": "20",
+                "Minuto": "38",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Valladolid",
+                "TimeB": "Sevilla Green",
+                "Horario": "20:41",
+                "Hora": "20",
+                "Minuto": "41",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "San Sebastian",
+                "Horario": "20:44",
+                "Hora": "20",
+                "Minuto": "44",
+                "Resultado_HT": "2 - 2",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Mallorca",
+                "TimeB": "Sevilla Red",
+                "Horario": "20:47",
+                "Hora": "20",
+                "Minuto": "47",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "0 - 2"
+            },
+            {
+                "TimeA": "Barcelona Blue",
+                "TimeB": "Valladolid",
+                "Horario": "20:50",
+                "Hora": "20",
+                "Minuto": "50",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Valencia",
+                "TimeB": "Getafe",
+                "Horario": "20:53",
+                "Hora": "20",
+                "Minuto": "53",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Osasuna",
+                "TimeB": "Sevilla Green",
+                "Horario": "20:56",
+                "Hora": "20",
+                "Minuto": "56",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "Getafe",
+                "Horario": "20:59",
+                "Hora": "20",
+                "Minuto": "59",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "1 - 0"
+            }
+        ],
+        "21": [
+            {
+                "TimeA": "Barcelona White",
+                "TimeB": "Bilbao",
+                "Horario": "21:02",
+                "Hora": "21",
+                "Minuto": "02",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Mallorca",
+                "TimeB": "Osasuna",
+                "Horario": "21:05",
+                "Hora": "21",
+                "Minuto": "05",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Madrid Red",
+                "TimeB": "Bilbao",
+                "Horario": "21:08",
+                "Hora": "21",
+                "Minuto": "08",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Madrid White",
+                "TimeB": "San Sebastian",
+                "Horario": "21:11",
+                "Hora": "21",
+                "Minuto": "11",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Barcelona Blue",
+                "TimeB": "Osasuna",
+                "Horario": "21:14",
+                "Hora": "21",
+                "Minuto": "14",
+                "Resultado_HT": "2 - 2",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "Valencia",
+                "TimeB": "Villareal",
+                "Horario": "21:17",
+                "Hora": "21",
+                "Minuto": "17",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Bilbao",
+                "TimeB": "Madrid White",
+                "Horario": "21:20",
+                "Hora": "21",
+                "Minuto": "20",
+                "Resultado_HT": "0 - 3",
+                "Resultado_FT": "0 - 2"
+            },
+            {
+                "TimeA": "Getafe",
+                "TimeB": "Vallecano",
+                "Horario": "21:23",
+                "Hora": "21",
+                "Minuto": "23",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Bilbao",
+                "TimeB": "Barcelona Blue",
+                "Horario": "21:26",
+                "Hora": "21",
+                "Minuto": "26",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Vallecano",
+                "TimeB": "San Sebastian",
+                "Horario": "21:29",
+                "Hora": "21",
+                "Minuto": "29",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Getafe",
+                "TimeB": "Barcelona Blue",
+                "Horario": "21:32",
+                "Hora": "21",
+                "Minuto": "32",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "San Sebastian",
+                "TimeB": "Sevilla Red",
+                "Horario": "21:35",
+                "Hora": "21",
+                "Minuto": "35",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Vallecano",
+                "TimeB": "Villareal",
+                "Horario": "21:38",
+                "Hora": "21",
+                "Minuto": "38",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Bilbao",
+                "TimeB": "Vallecano",
+                "Horario": "21:41",
+                "Hora": "21",
+                "Minuto": "41",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Valencia",
+                "TimeB": "Mallorca",
+                "Horario": "21:44",
+                "Hora": "21",
+                "Minuto": "44",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "Vallecano",
+                "Horario": "21:47",
+                "Hora": "21",
+                "Minuto": "47",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "Sevilla Green",
+                "Horario": "21:50",
+                "Hora": "21",
+                "Minuto": "50",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "San Sebastian",
+                "TimeB": "Madrid White",
+                "Horario": "21:53",
+                "Hora": "21",
+                "Minuto": "53",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Bilbao",
+                "TimeB": "Getafe",
+                "Horario": "21:56",
+                "Hora": "21",
+                "Minuto": "56",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Barcelona White",
+                "TimeB": "Villareal",
+                "Horario": "21:59",
+                "Hora": "21",
+                "Minuto": "59",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 0"
+            }
+        ],
+        "22": [
+            {
+                "TimeA": "Mallorca",
+                "TimeB": "Sevilla Green",
+                "Horario": "22:02",
+                "Hora": "22",
+                "Minuto": "02",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Sevilla Green",
+                "TimeB": "Vigo",
+                "Horario": "22:05",
+                "Hora": "22",
+                "Minuto": "05",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Getafe",
+                "TimeB": "San Sebastian",
+                "Horario": "22:08",
+                "Hora": "22",
+                "Minuto": "08",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "Mallorca",
+                "TimeB": "Madrid Red",
+                "Horario": "22:11",
+                "Hora": "22",
+                "Minuto": "11",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Osasuna",
+                "TimeB": "Valladolid",
+                "Horario": "22:14",
+                "Hora": "22",
+                "Minuto": "14",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Vallecano",
+                "TimeB": "Madrid Red",
+                "Horario": "22:17",
+                "Hora": "22",
+                "Minuto": "17",
+                "Resultado_HT": "0 - 4",
+                "Resultado_FT": "0 - 3"
+            },
+            {
+                "TimeA": "Madrid White",
+                "TimeB": "Villareal",
+                "Horario": "22:20",
+                "Hora": "22",
+                "Minuto": "20",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Getafe",
+                "TimeB": "Sevilla Red",
+                "Horario": "22:23",
+                "Hora": "22",
+                "Minuto": "23",
+                "Resultado_HT": "3 - 4",
+                "Resultado_FT": "2 - 2"
+            },
+            {
+                "TimeA": "Valencia",
+                "TimeB": "Bilbao",
+                "Horario": "22:29",
+                "Hora": "22",
+                "Minuto": "29",
+                "Resultado_HT": "1 - 5",
+                "Resultado_FT": "1 - 2"
+            },
+            {
+                "TimeA": "Sevilla Green",
+                "TimeB": "Valladolid",
+                "Horario": "22:32",
+                "Hora": "22",
+                "Minuto": "32",
+                "Resultado_HT": "3 - 1",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "San Sebastian",
+                "TimeB": "Valladolid",
+                "Horario": "22:35",
+                "Hora": "22",
+                "Minuto": "35",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "Villareal",
+                "TimeB": "Valladolid",
+                "Horario": "22:38",
+                "Hora": "22",
+                "Minuto": "38",
+                "Resultado_HT": "5 - 0",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Valladolid",
+                "TimeB": "Madrid White",
+                "Horario": "22:41",
+                "Hora": "22",
+                "Minuto": "41",
+                "Resultado_HT": "0 - 5",
+                "Resultado_FT": "0 - 3"
+            },
+            {
+                "TimeA": "Madrid Red",
+                "TimeB": "Valencia",
+                "Horario": "22:44",
+                "Hora": "22",
+                "Minuto": "44",
+                "Resultado_HT": "2 - 2",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "San Sebastian",
+                "TimeB": "Madrid Red",
+                "Horario": "22:47",
+                "Hora": "22",
+                "Minuto": "47",
+                "Resultado_HT": "1 - 4",
+                "Resultado_FT": "0 - 2"
+            },
+            {
+                "TimeA": "Sevilla Green",
+                "TimeB": "Madrid White",
+                "Horario": "22:50",
+                "Hora": "22",
+                "Minuto": "50",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Barcelona White",
+                "TimeB": "Osasuna",
+                "Horario": "22:53",
+                "Hora": "22",
+                "Minuto": "53",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 2"
+            },
+            {
+                "TimeA": "Osasuna",
+                "TimeB": "Vallecano",
+                "Horario": "22:56",
+                "Hora": "22",
+                "Minuto": "56",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "Valencia",
+                "Horario": "22:59",
+                "Hora": "22",
+                "Minuto": "59",
+                "Resultado_HT": "4 - 2",
+                "Resultado_FT": "3 - 1"
+            }
+        ],
+        "23": [
+            {
+                "TimeA": "Barcelona Blue",
+                "TimeB": "Valencia",
+                "Horario": "23:02",
+                "Hora": "23",
+                "Minuto": "02",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Madrid White",
+                "TimeB": "Sevilla Green",
+                "Horario": "23:05",
+                "Hora": "23",
+                "Minuto": "05",
+                "Resultado_HT": "4 - 0",
+                "Resultado_FT": "3 - 0"
+            },
+            {
+                "TimeA": "San Sebastian",
+                "TimeB": "Bilbao",
+                "Horario": "23:08",
+                "Hora": "23",
+                "Minuto": "08",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Bilbao",
+                "TimeB": "Valencia",
+                "Horario": "23:11",
+                "Hora": "23",
+                "Minuto": "11",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Vigo",
+                "TimeB": "Barcelona White",
+                "Horario": "23:14",
+                "Hora": "23",
+                "Minuto": "14",
+                "Resultado_HT": "4 - 0",
+                "Resultado_FT": "3 - 0"
+            },
+            {
+                "TimeA": "Madrid Red",
+                "TimeB": "Barcelona Blue",
+                "Horario": "23:17",
+                "Hora": "23",
+                "Minuto": "17",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Barcelona Blue",
+                "TimeB": "San Sebastian",
+                "Horario": "23:20",
+                "Hora": "23",
+                "Minuto": "20",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Mallorca",
+                "TimeB": "Barcelona Blue",
+                "Horario": "23:23",
+                "Hora": "23",
+                "Minuto": "23",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Sevilla Red",
+                "TimeB": "Barcelona Blue",
+                "Horario": "23:26",
+                "Hora": "23",
+                "Minuto": "26",
+                "Resultado_HT": "4 - 1",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Barcelona White",
+                "TimeB": "Sevilla Green",
+                "Horario": "23:29",
+                "Hora": "23",
+                "Minuto": "29",
+                "Resultado_HT": "2 - 2",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "Villareal",
+                "TimeB": "Osasuna",
+                "Horario": "23:32",
+                "Hora": "23",
+                "Minuto": "32",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Barcelona Blue",
+                "TimeB": "Vigo",
+                "Horario": "23:35",
+                "Hora": "23",
+                "Minuto": "35",
+                "Resultado_HT": "3 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "San Sebastian",
+                "TimeB": "Vallecano",
+                "Horario": "23:38",
+                "Hora": "23",
+                "Minuto": "38",
+                "Resultado_HT": "1 - 4",
+                "Resultado_FT": "1 - 2"
+            },
+            {
+                "TimeA": "Madrid Red",
+                "TimeB": "Barcelona White",
+                "Horario": "23:41",
+                "Hora": "23",
+                "Minuto": "41",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Getafe",
+                "TimeB": "Bilbao",
+                "Horario": "23:44",
+                "Hora": "23",
+                "Minuto": "44",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Bilbao",
+                "TimeB": "Valladolid",
+                "Horario": "23:47",
+                "Hora": "23",
+                "Minuto": "47",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Madrid White",
+                "TimeB": "Barcelona Blue",
+                "Horario": "23:50",
+                "Hora": "23",
+                "Minuto": "50",
+                "Resultado_HT": "3 - 0",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Vigo",
+                "TimeB": "Sevilla Red",
+                "Horario": "23:53",
+                "Hora": "23",
+                "Minuto": "53",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Sevilla Green",
+                "TimeB": "Barcelona Blue",
+                "Horario": "23:56",
+                "Hora": "23",
+                "Minuto": "56",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Sevilla Green",
+                "TimeB": "San Sebastian",
+                "Horario": "23:59",
+                "Hora": "23",
+                "Minuto": "59",
+                "Resultado_HT": "5 - 0",
+                "Resultado_FT": "3 - 0"
+            }
+        ]
+    }
+}

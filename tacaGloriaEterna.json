@@ -1,0 +1,722 @@
+{
+    "ultimaAtualizacao": "16/03/2025 01:36:14",
+    "Linhas": {
+        "20": [
+            {
+                "TimeA": "Deportes",
+                "TimeB": "Verdao",
+                "Horario": "20:01",
+                "Hora": "20",
+                "Minuto": "01",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Los Verdiblancos",
+                "TimeB": "Nacional",
+                "Horario": "20:04",
+                "Hora": "20",
+                "Minuto": "04",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Timao",
+                "TimeB": "Los Albos",
+                "Horario": "20:07",
+                "Hora": "20",
+                "Minuto": "07",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Los Verdiblancos",
+                "TimeB": "Estudiantes",
+                "Horario": "20:10",
+                "Hora": "20",
+                "Minuto": "10",
+                "Resultado_HT": "1 - 4",
+                "Resultado_FT": "1 - 2"
+            },
+            {
+                "TimeA": "Mengo",
+                "TimeB": "U. de Chile",
+                "Horario": "20:13",
+                "Hora": "20",
+                "Minuto": "13",
+                "Resultado_HT": "2 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Nacional",
+                "TimeB": "Atlético",
+                "Horario": "20:16",
+                "Hora": "20",
+                "Minuto": "16",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "U. Catolica",
+                "TimeB": "Deportes",
+                "Horario": "20:19",
+                "Hora": "20",
+                "Minuto": "19",
+                "Resultado_HT": "4 - 0",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Verdao",
+                "TimeB": "Peixe",
+                "Horario": "20:22",
+                "Hora": "20",
+                "Minuto": "22",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Atlético",
+                "TimeB": "Tricolor paulista",
+                "Horario": "20:25",
+                "Hora": "20",
+                "Minuto": "25",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "2 - 1"
+            },
+            {
+                "TimeA": "Alianza",
+                "TimeB": "Los Rojos del Ávila",
+                "Horario": "20:28",
+                "Hora": "20",
+                "Minuto": "28",
+                "Resultado_HT": "3 - 0",
+                "Resultado_FT": "3 - 0"
+            },
+            {
+                "TimeA": "River",
+                "TimeB": "Verdao",
+                "Horario": "20:31",
+                "Hora": "20",
+                "Minuto": "31",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Cristal",
+                "TimeB": "Los Rojos del Ávila",
+                "Horario": "20:34",
+                "Hora": "20",
+                "Minuto": "34",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Nacional",
+                "TimeB": "Boca",
+                "Horario": "20:37",
+                "Hora": "20",
+                "Minuto": "37",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Los Verdiblancos",
+                "TimeB": "Verdao",
+                "Horario": "20:40",
+                "Hora": "20",
+                "Minuto": "40",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Timao",
+                "TimeB": "Tricolor paulista",
+                "Horario": "20:43",
+                "Hora": "20",
+                "Minuto": "43",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Alianza",
+                "TimeB": "River",
+                "Horario": "20:46",
+                "Hora": "20",
+                "Minuto": "46",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "O. Caldas",
+                "TimeB": "Timao",
+                "Horario": "20:49",
+                "Hora": "20",
+                "Minuto": "49",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Boca",
+                "TimeB": "Estudiantes",
+                "Horario": "20:52",
+                "Hora": "20",
+                "Minuto": "52",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Verdao",
+                "TimeB": "U. de Chile",
+                "Horario": "20:55",
+                "Hora": "20",
+                "Minuto": "55",
+                "Resultado_HT": "3 - 0",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "River",
+                "TimeB": "Alianza",
+                "Horario": "20:58",
+                "Hora": "20",
+                "Minuto": "58",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            }
+        ],
+        "21": [
+            {
+                "TimeA": "Cristal",
+                "TimeB": "Tricolor paulista",
+                "Horario": "21:01",
+                "Hora": "21",
+                "Minuto": "01",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Alianza",
+                "TimeB": "Estudiantes",
+                "Horario": "21:04",
+                "Hora": "21",
+                "Minuto": "04",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "Deportes",
+                "TimeB": "Atlético",
+                "Horario": "21:07",
+                "Hora": "21",
+                "Minuto": "07",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "O. Caldas",
+                "TimeB": "Boca",
+                "Horario": "21:10",
+                "Hora": "21",
+                "Minuto": "10",
+                "Resultado_HT": "3 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Los Rojos del Ávila",
+                "TimeB": "Penarol",
+                "Horario": "21:13",
+                "Hora": "21",
+                "Minuto": "13",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Mengo",
+                "TimeB": "Peixe",
+                "Horario": "21:16",
+                "Hora": "21",
+                "Minuto": "16",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 2"
+            },
+            {
+                "TimeA": "Penarol",
+                "TimeB": "LDU",
+                "Horario": "21:19",
+                "Hora": "21",
+                "Minuto": "19",
+                "Resultado_HT": "3 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Estudiantes",
+                "TimeB": "Tricolor paulista",
+                "Horario": "21:22",
+                "Hora": "21",
+                "Minuto": "22",
+                "Resultado_HT": "4 - 0",
+                "Resultado_FT": "3 - 0"
+            },
+            {
+                "TimeA": "Mengo",
+                "TimeB": "Nacional",
+                "Horario": "21:25",
+                "Hora": "21",
+                "Minuto": "25",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Verdao",
+                "TimeB": "Los Verdiblancos",
+                "Horario": "21:28",
+                "Hora": "21",
+                "Minuto": "28",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Deportes",
+                "TimeB": "Los Albos",
+                "Horario": "21:31",
+                "Hora": "21",
+                "Minuto": "31",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Los Rojos del Ávila",
+                "TimeB": "Tricolor paulista",
+                "Horario": "21:34",
+                "Hora": "21",
+                "Minuto": "34",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "River",
+                "TimeB": "Timao",
+                "Horario": "21:37",
+                "Hora": "21",
+                "Minuto": "37",
+                "Resultado_HT": "0 - 3",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Estudiantes",
+                "TimeB": "U. Catolica",
+                "Horario": "21:40",
+                "Hora": "21",
+                "Minuto": "40",
+                "Resultado_HT": "2 - 3",
+                "Resultado_FT": "2 - 1"
+            },
+            {
+                "TimeA": "Cristal",
+                "TimeB": "Peixe",
+                "Horario": "21:43",
+                "Hora": "21",
+                "Minuto": "43",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Atlético",
+                "TimeB": "Los Verdiblancos",
+                "Horario": "21:46",
+                "Hora": "21",
+                "Minuto": "46",
+                "Resultado_HT": "0 - 3",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Los Rojos del Ávila",
+                "TimeB": "River",
+                "Horario": "21:49",
+                "Hora": "21",
+                "Minuto": "49",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "O. Caldas",
+                "TimeB": "Olimpia",
+                "Horario": "21:52",
+                "Hora": "21",
+                "Minuto": "52",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Penarol",
+                "TimeB": "Los Verdiblancos",
+                "Horario": "21:55",
+                "Hora": "21",
+                "Minuto": "55",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Mengo",
+                "TimeB": "O. Caldas",
+                "Horario": "21:58",
+                "Hora": "21",
+                "Minuto": "58",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "2 - 1"
+            }
+        ],
+        "22": [
+            {
+                "TimeA": "Los Rojos del Ávila",
+                "TimeB": "Cristal",
+                "Horario": "22:01",
+                "Hora": "22",
+                "Minuto": "01",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Deportes",
+                "TimeB": "Tricolor paulista",
+                "Horario": "22:04",
+                "Hora": "22",
+                "Minuto": "04",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Penarol",
+                "TimeB": "Mengo",
+                "Horario": "22:07",
+                "Hora": "22",
+                "Minuto": "07",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Verdao",
+                "TimeB": "Olimpia",
+                "Horario": "22:10",
+                "Hora": "22",
+                "Minuto": "10",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "Nacional",
+                "TimeB": "Timao",
+                "Horario": "22:13",
+                "Hora": "22",
+                "Minuto": "13",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "U. de Chile",
+                "TimeB": "Peixe",
+                "Horario": "22:16",
+                "Hora": "22",
+                "Minuto": "16",
+                "Resultado_HT": "3 - 2",
+                "Resultado_FT": "2 - 2"
+            },
+            {
+                "TimeA": "Cristal",
+                "TimeB": "Estudiantes",
+                "Horario": "22:19",
+                "Hora": "22",
+                "Minuto": "19",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Tricolor paulista",
+                "TimeB": "Los Albos",
+                "Horario": "22:22",
+                "Hora": "22",
+                "Minuto": "22",
+                "Resultado_HT": "3 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Cristal",
+                "TimeB": "Timao",
+                "Horario": "22:25",
+                "Hora": "22",
+                "Minuto": "25",
+                "Resultado_HT": "3 - 1",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Deportes",
+                "TimeB": "U. Catolica",
+                "Horario": "22:28",
+                "Hora": "22",
+                "Minuto": "28",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Atlético",
+                "TimeB": "Los Albos",
+                "Horario": "22:31",
+                "Hora": "22",
+                "Minuto": "31",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Los Verdiblancos",
+                "TimeB": "Cristal",
+                "Horario": "22:34",
+                "Hora": "22",
+                "Minuto": "34",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "River",
+                "TimeB": "Penarol",
+                "Horario": "22:37",
+                "Hora": "22",
+                "Minuto": "37",
+                "Resultado_HT": "3 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Mengo",
+                "TimeB": "Los Rojos del Ávila",
+                "Horario": "22:40",
+                "Hora": "22",
+                "Minuto": "40",
+                "Resultado_HT": "1 - 2",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "O. Caldas",
+                "TimeB": "Deportes",
+                "Horario": "22:43",
+                "Hora": "22",
+                "Minuto": "43",
+                "Resultado_HT": "1 - 3",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "U. Catolica",
+                "TimeB": "LDU",
+                "Horario": "22:46",
+                "Hora": "22",
+                "Minuto": "46",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Atlético",
+                "TimeB": "Peixe",
+                "Horario": "22:49",
+                "Hora": "22",
+                "Minuto": "49",
+                "Resultado_HT": "2 - 2",
+                "Resultado_FT": "2 - 1"
+            },
+            {
+                "TimeA": "U. Catolica",
+                "TimeB": "Los Verdiblancos",
+                "Horario": "22:52",
+                "Hora": "22",
+                "Minuto": "52",
+                "Resultado_HT": "5 - 2",
+                "Resultado_FT": "4 - 0"
+            },
+            {
+                "TimeA": "Los Albos",
+                "TimeB": "Deportes",
+                "Horario": "22:55",
+                "Hora": "22",
+                "Minuto": "55",
+                "Resultado_HT": "4 - 2",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Boca",
+                "TimeB": "Cristal",
+                "Horario": "22:58",
+                "Hora": "22",
+                "Minuto": "58",
+                "Resultado_HT": "2 - 2",
+                "Resultado_FT": "0 - 1"
+            }
+        ],
+        "23": [
+            {
+                "TimeA": "Peixe",
+                "TimeB": "Los Verdiblancos",
+                "Horario": "23:01",
+                "Hora": "23",
+                "Minuto": "01",
+                "Resultado_HT": "2 - 0",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "LDU",
+                "TimeB": "Verdao",
+                "Horario": "23:04",
+                "Hora": "23",
+                "Minuto": "04",
+                "Resultado_HT": "0 - 2",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Peixe",
+                "TimeB": "Alianza",
+                "Horario": "23:07",
+                "Hora": "23",
+                "Minuto": "07",
+                "Resultado_HT": "2 - 2",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Los Albos",
+                "TimeB": "Penarol",
+                "Horario": "23:10",
+                "Hora": "23",
+                "Minuto": "10",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "River",
+                "TimeB": "Peixe",
+                "Horario": "23:13",
+                "Hora": "23",
+                "Minuto": "13",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "U. Catolica",
+                "TimeB": "Boca",
+                "Horario": "23:16",
+                "Hora": "23",
+                "Minuto": "16",
+                "Resultado_HT": "4 - 1",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Timao",
+                "TimeB": "Peixe",
+                "Horario": "23:19",
+                "Hora": "23",
+                "Minuto": "19",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "LDU",
+                "TimeB": "Olimpia",
+                "Horario": "23:22",
+                "Hora": "23",
+                "Minuto": "22",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Penarol",
+                "TimeB": "River",
+                "Horario": "23:25",
+                "Hora": "23",
+                "Minuto": "25",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Peixe",
+                "TimeB": "U. Catolica",
+                "Horario": "23:28",
+                "Hora": "23",
+                "Minuto": "28",
+                "Resultado_HT": "3 - 0",
+                "Resultado_FT": "1 - 0"
+            },
+            {
+                "TimeA": "Alianza",
+                "TimeB": "Nacional",
+                "Horario": "23:31",
+                "Hora": "23",
+                "Minuto": "31",
+                "Resultado_HT": "2 - 1",
+                "Resultado_FT": "2 - 0"
+            },
+            {
+                "TimeA": "Peixe",
+                "TimeB": "O. Caldas",
+                "Horario": "23:34",
+                "Hora": "23",
+                "Minuto": "34",
+                "Resultado_HT": "1 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "U. de Chile",
+                "TimeB": "LDU",
+                "Horario": "23:37",
+                "Hora": "23",
+                "Minuto": "37",
+                "Resultado_HT": "0 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Peixe",
+                "TimeB": "Olimpia",
+                "Horario": "23:40",
+                "Hora": "23",
+                "Minuto": "40",
+                "Resultado_HT": "3 - 3",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "Deportes",
+                "TimeB": "River",
+                "Horario": "23:43",
+                "Hora": "23",
+                "Minuto": "43",
+                "Resultado_HT": "1 - 1",
+                "Resultado_FT": "0 - 1"
+            },
+            {
+                "TimeA": "Nacional",
+                "TimeB": "Peixe",
+                "Horario": "23:46",
+                "Hora": "23",
+                "Minuto": "46",
+                "Resultado_HT": "4 - 1",
+                "Resultado_FT": "3 - 0"
+            },
+            {
+                "TimeA": "LDU",
+                "TimeB": "U. Catolica",
+                "Horario": "23:49",
+                "Hora": "23",
+                "Minuto": "49",
+                "Resultado_HT": "1 - 3",
+                "Resultado_FT": "1 - 1"
+            },
+            {
+                "TimeA": "Verdao",
+                "TimeB": "Timao",
+                "Horario": "23:52",
+                "Hora": "23",
+                "Minuto": "52",
+                "Resultado_HT": "0 - 0",
+                "Resultado_FT": "0 - 0"
+            },
+            {
+                "TimeA": "Mengo",
+                "TimeB": "Los Verdiblancos",
+                "Horario": "23:55",
+                "Hora": "23",
+                "Minuto": "55",
+                "Resultado_HT": "3 - 2",
+                "Resultado_FT": "1 - 1"
+            }
+    ]}}
