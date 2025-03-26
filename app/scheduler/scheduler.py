@@ -1,69 +1,40 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 from app.utils import dados_jogos
-from app.scraping import atualizador
-from app.utils import dados_jogos
+from app.scraping import updater
 
-scheduler = BackgroundScheduler()
-scheduler.add_job(
-    atualizador.agendamento_atualizacao,
-    'cron',
-    minute = ','.join(map(str, dados_jogos.minutosCopaAmerica)),
-    second = 40,
-    args=[dados_jogos.campeonatos[0], "copaAmerica.json"]
-)  # Copa America
+scheduler = BackgroundScheduler({
+    'apscheduler.executors.default': {
+        'class': 'apscheduler.executors.pool:ThreadPoolExecutor',
+        'max_workers': 2
+    },
+    'apscheduler.job_defaults.coalesce': True,
+    'apscheduler.job_defaults.max_instances': 1
+})
 
-scheduler.add_job(
-    atualizador.agendamento_atualizacao,
-    'cron',
-    minute = ','.join(map(str, dados_jogos.minutosTacaGloriaEterna)),
-    second = 40,
-    args=[dados_jogos.campeonatos[1], "tacaGloriaEterna.json"]
-)  # Taca Gloria Eterna
+for i, championships in enumerate(dados_jogos.championships):
+    minutos_attr = f"minutos{championships.replace(' ', '')}"
+    minutos = getattr(dados_jogos, minutos_attr, [])
+    if not minutos:
+        continue  
+    
+    scheduler.add_job(
+        updater.agendamento_atualizacao,
+        'cron',
+        minute=','.join(map(str, minutos)),
+        second=40,
+        args=[championships, f"{championships.lower().replace(' ', '_')}.json"],
+        executor='default',
+        misfire_grace_time=120,
+        name=f"job_{championships}"
+    )
 
-scheduler.add_job(
-    atualizador.agendamento_atualizacao,
-    'cron',
-    minute = ','.join(map(str, dados_jogos.minutosEuro)),
-    second = 40,
-    args=[dados_jogos.campeonatos[2], "euro.json"]
-)  # euro
 
-scheduler.add_job(
-    atualizador.agendamento_atualizacao,
-    'cron',
-    minute = ','.join(map(str, dados_jogos.minutosBritishDerbies)),
-    second = 40,
-    args=[dados_jogos.campeonatos[3], "britishDerbies.json"]
-)  # British Derbies
-
-scheduler.add_job(
-    atualizador.agendamento_atualizacao,
-    'cron',
-    minute = ','.join(map(str, dados_jogos.minutosLigaEspanhola)),
-    second = 40,
-    args=[dados_jogos.campeonatos[4], "ligaEspanhola.json"]
-)  # Liga Espanhola
-
-scheduler.add_job(
-    atualizador.agendamento_atualizacao,
-    'cron',
-    minute = ','.join(map(str, dados_jogos.minutosScudettoItaliano)),
-    second = 40,
-    args=[dados_jogos.campeonatos[5], "scudettoItaliano.json"]
-)  # Scudetto Italiano
-
-scheduler.add_job(
-    atualizador.agendamento_atualizacao,
-    'cron',
-    minute = ','.join(map(str, dados_jogos.minutosCampeonatoItaliano)),
-    second = 40,
-    args=[dados_jogos.campeonatos[6], "campeonatoItaliano.json"]
-)  # Campeonato Italiano
-
-scheduler.add_job(
-    atualizador.agendamento_atualizacao,
-    'cron',
-    minute = ','.join(map(str, dados_jogos.minutosCopaDasEstrelas)),
-    second = 40,
-    args=[dados_jogos.campeonatos[7], "copaDasEstrelas.json"]
-)  # Copa Das Estrelas
+def start_scheduler():
+    if not scheduler.running:
+        try:
+            scheduler.start()
+            print("scheduler iniciado")
+            return True
+        except:
+            return False
+    return True
