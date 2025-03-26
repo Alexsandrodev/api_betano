@@ -1,99 +1,101 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
-from bs4 import BeautifulSoup
-from time import sleep
 from datetime import datetime
-import re
-from app.utils import jsonData
 import logging
+from time import sleep
 
+# Configurações globais
+CHROME_OPTIONS = {
+    'binary_location': '/usr/bin/google-chrome',
+    'args': [
+        '--headless',
+        '--no-sandbox',
+        '--disable-gpu',
+        '--disable-dev-shm-usage',
+        '--disable-images',
+        '--disable-javascript',
+        '--window-size=1920,1080',
+        '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+    ],
+    'exclude_switches': ['enable-automation', 'enable-logging'],
+    'prefs': {
+        'intl.accept_languages': 'pt-BR',
+        'timezone.override': 'America/Sao_Paulo'
+    }
+}
 
-def dataAtualizacao():
+CAMPEONATOS = {
+    "copaAmerica": "Copa America",
+    "tacaGloriaEterna": "Taça Glória eterna",
+    "euro": "Euro",
+    "britishDerbies": "British Derbies",
+    "ligaEspanhola": "Liga Espanhola",
+    "scudettoItaliano": "Scudetto Italiano",
+    "campeonatoItaliano": "Campeonato Italiano",
+    "copaDasEstrelas": "Copa das estrelas"
+}
+
+def data_atualizacao():
     return datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
-import re
+def format_name(campeonato):
+    return CAMPEONATOS.get(campeonato, campeonato)
 
-def Format_name(text):
-    match text:
-        case  "copaAmerica":
-            return "Copa America"
-        
-        case "tacaGloriaEterna":
-            return "Taça Glória eterna"
-        
-        case "euro":
-            return "Euro"
-        
-        case "britishDerbies":
-            return "British Derbies"
+def setup_driver():
+    options = webdriver.ChromeOptions()
+    for arg in CHROME_OPTIONS['args']:
+        options.add_argument(arg)
+    options.add_experimental_option('excludeSwitches', CHROME_OPTIONS['exclude_switches'])
+    options.add_experimental_option('prefs', CHROME_OPTIONS['prefs'])
+    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-        case "ligaEspanhola":
-            return "Liga Espanhola"
-        
-        case "scudettoItaliano":
-            return "Scudetto Italiano"
-        
-        case "campeonatoItaliano":
-            return "Campeonato Italiano"
-        
-        case "copaDasEstrelas":
-            return "Copa das estrelas"
+def click_element(driver, locator, max_attempts=3, timeout=10):
+    for _ in range(max_attempts):
+        try:
+            element = WebDriverWait(driver, timeout).until(
+                EC.element_to_be_clickable(locator))
+            element.click()
+            return True
+        except:
+            sleep(1)
+    return False
 
-
-
-def gethtml(campeonato):
-    url = "https://www.betano.bet.br/virtuals/futebol/"
-    liga = Format_name(campeonato)
-    
-    options = Options()
-    options.add_argument("--headless")  # Sem interface gráfica
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-    
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=options)
-
-    driver.get(url)
-    
-    
-    button_sim = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.CSS_SELECTOR, '[data-qa="age-verification-modal-ok-button"]'))
-    )
-
-
-    
-    button_sim.click()
+def get_html(campeonato):
+    driver = None
+    try:
+        driver = setup_driver()
+        url = "https://www.betano.bet.br/virtuals/futebol/"
+        liga = format_name(campeonato)
         
-    button_x = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, 'button[type="button"]'))
-    )
-        
-    button_x.click()
-        
-    camp = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.LINK_TEXT, f"{liga}"))
-    )
-    camp.click()
-    camp.click()
-    
-    
-    button_results = WebDriverWait (driver, 10).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, "div[data-qa='virtuals-results-toggle-button']"))
-        
-        )
-    button_results.click()
-    
-    sleep(1)
+        driver.get(url)
+        logging.info(f'Acessando {url} para {campeonato}')
 
-    page_source = driver.page_source
+        # Elementos para clicar (com fallback silencioso)
+        elements_to_click = [
+            (By.XPATH, '//button[span[text()="Sim"]]'),  # Aceitar cookies
+            (By.CSS_SELECTOR, 'button[type="button"]'),    # Fechar popup
+            (By.LINK_TEXT, liga),                          # Selecionar campeonato
+            (By.CSS_SELECTOR, "div[data-qa='virtuals-results-toggle-button']")  # Botão resultados
+        ]
+
+        for locator in elements_to_click:
+            if not click_element(driver, locator):
+                logging.warning(f"Elemento não clicável: {locator}")
+
+        # Esperar resultados carregarem
+        WebDriverWait(driver, 15).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 
+            ".tw-flex.tw-items-center.tw-justify-center.tw-mt-m.tw-mb-n.tw-mx-n")))
         
-    driver.quit()
-    
-    return page_source
+        return driver.page_source
+
+    except Exception as e:
+        logging.error(f"Erro no scraping de {campeonato}: {str(e)}")
+        raise
+    finally:
+        if driver:
+            driver.quit()
