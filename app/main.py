@@ -5,7 +5,7 @@ from app.routes.routes import router
 
 app = FastAPI(title= "Web Screping Api", version="1.0")
 
-ALLOWED_ORIGINS = ["http://localhost:8000/bet365/horarios/"]
+ALLOWED_ORIGINS = ["http://localhost:8000/bet365/horarios/tabela"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -14,4 +14,5 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 app.include_router(router)
