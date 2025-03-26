@@ -1,3 +1,8 @@
 venv/
 .pytest_cache
 .env
+__pycache__
+__pycache__/
+.gitignore
+test/
+data/
