@@ -1,5 +1,5 @@
 from apscheduler.schedulers.background import BackgroundScheduler
-from app.utils import dados_jogos
+from app.utils import game_data
 from app.scraping import updater
 
 scheduler = BackgroundScheduler({
@@ -11,9 +11,9 @@ scheduler = BackgroundScheduler({
     'apscheduler.job_defaults.max_instances': 1
 })
 
-for i, championships in enumerate(dados_jogos.championships):
+for i, championships in enumerate(game_data.championships):
     minutos_attr = f"minutos{championships.replace(' ', '')}"
-    minutos = getattr(dados_jogos, minutos_attr, [])
+    minutos = getattr(game_data, minutos_attr, [])
     if not minutos:
         continue  
     

@@ -1,5 +1,5 @@
 from app.scraping import initializer
-from app.utils.dados_jogos import championships
+from app.utils.game_data import championships
 from app.scheduler.scheduler import start_scheduler
 
 from concurrent.futures import ThreadPoolExecutor, as_completed

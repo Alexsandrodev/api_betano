@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from fastapi.responses import FileResponse
 
-from app.scheduler.fisrt_scheduler import first_scheduler
+from app.scheduler.first_scheduler import first_scheduler
 
 router = APIRouter()
 
