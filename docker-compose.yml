@@ -1,32 +1,40 @@
-version: '3.8'
-
 services:
+  db:
+    image: postgres:17
+    container_name: pg_campeonatos
+    restart: always
+    environment:
+      POSTGRES_DB: campeonatos_db
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: app_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   api:
     build: .
     container_name: api_betano
-    command: uvicorn app.main:app --host 0.0.0.0 --port 3000
-    volumes:
-      - .:/api_betano
-      - /api_betano/__pycache__/
-      - ./app/data:/api_betano/app/data
+    command: uvicorn app.main:app --host 0.0.0.0  --port 3000 --workes
     environment:
       - PYTHONUNBUFFERED=1
-      - DISPLAY=:99  
-    dns:
-      - 8.8.8.8
-      - 8.8.4.4
-    shm_size: '1gb'  
-    privileged: true
+      - MAX_REQUESTS=1000
+      - DISPLAY=:99
+      - DATABASE_URL=postgresql://app_user:app_password@db:5432/campeonatos_db
     deploy:
       resources:
         limits:
-          memory: 2G  
+          cpus: '2'
+          memory: 4G
     expose:
       - "3000"
     ports:
       - "3000:3000"
-    networks:
-      - backend
+    volumes:
+      - ./app/data:/api_betano/app/data  
+      - .:/api_betano
+    depends_on:
+      - db
 
   nginx_api:
     image: nginx:latest
@@ -34,12 +42,10 @@ services:
     ports:
       - "80:80"
     volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf 
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - api
-    networks:
-      - backend
 
-networks:
-  backend:
-    driver: bridge
+volumes:
+  postgres_data:

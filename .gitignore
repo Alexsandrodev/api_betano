@@ -6,3 +6,4 @@ __pycache__/
 .gitignore
 test/
 data/
+script.js

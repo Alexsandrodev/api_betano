@@ -1,6 +1,6 @@
 from app.scraping import scraping
 from bs4 import BeautifulSoup
-from app.utils import json_data
+from app.db import operations
 from collections import defaultdict
 from time import time
 
@@ -30,8 +30,8 @@ def format_data(element, soup):
     return match_info
 
 def scrape_data(championship: str):
-    print("Scraping data from: ", championship)
-    file_name = f"{championship}.json"
+    print("\nScraping data from: ", championship)
+    file_name = championship
     
     selenium_time = time()
     page_source = scraping.get_html(championship)
@@ -53,4 +53,4 @@ def scrape_data(championship: str):
             "Linhas": matches_by_hour 
         }
         
-    json_data.save_data(data, file_name)
+    operations.save_data(data, file_name)

@@ -1,4 +1,4 @@
-championships = ["copaAmerica",
+championships_names = ["copaAmerica",
             "tacaGloriaEterna",
             "euro", 
             "britishDerbies",

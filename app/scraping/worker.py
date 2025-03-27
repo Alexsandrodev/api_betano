@@ -1,10 +1,12 @@
 from app.scraping import initializer
-from app.utils.game_data import championships
+from app.utils.game_data import championships_names
 from app.scheduler.scheduler import start_scheduler
+from app.db.operations import save_data, load_results
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tenacity import retry, stop_after_attempt, wait_exponential
 from func_timeout import func_timeout, FunctionTimedOut
+from datetime import datetime
 import time
 import os
 
@@ -26,20 +28,22 @@ def scrape_with_timeout(championships, timeout=300):
         raise
 
 def should_scrape(championships):
-    file_path = f"app/data/{championships}.json"
-    if not os.path.exists(file_path):
+    existing_data = load_results(championships)
+    if not existing_data:
         return True
     try:
-        return (time.time() - os.path.getmtime(file_path)) > 3600  # 1 hora
+        ultima_atualizacao_ts = datetime.strptime(
+                existing_data.get('ultimaAtualizacao', '01/01/1970 00:00:00'),
+                '%d/%m/%Y %H:%M:%S'
+            ).timestamp()
+
+        return (time.time() - ultima_atualizacao_ts) > 3600
     except:
         return True
     
-        
 
 def start_scraping():
-    os.makedirs("app/data", exist_ok=True)
-    
-    pending_championships = [c for c in championships if should_scrape(c)]
+    pending_championships = [c for c in championships_names if should_scrape(c)]
     
     if not pending_championships:
         start_scheduler()
@@ -47,7 +51,7 @@ def start_scraping():
 
     print(f"🚀 Iniciando scraping para {len(pending_championships)} campeonatos...")
     
-    with ThreadPoolExecutor(max_workers=2) as executor:
+    with ThreadPoolExecutor(max_workers=1) as executor:
         futures = {
             executor.submit(scrape_with_timeout, championships): championships
             for championships in pending_championships
@@ -61,5 +65,5 @@ def start_scraping():
             except Exception as e:
                 print(f"❌ Falha crítica em {championships}: {str(e)}")
                 # Opcional: enviar notificação ou logar erro em banco de dados
-
+    
     start_scheduler()

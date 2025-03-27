@@ -1,5 +1,5 @@
 import json
-from app.utils import json_data
+from app.db import operations
 from app.scraping import scraping
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -28,9 +28,9 @@ def extract_match_data(element):
     except Exception as e:
         return {"error": str(e)}
 
-def fetch_results(championship, nome_arquivo):
+def fetch_results(championship, name_db):
     """Fetches and updates results using Selenium."""
-    existing_data = json_data.load_data(nome_arquivo)  # Load existing data
+    existing_data = operations.load_results(name_db) 
 
     page_source = scraping.get_html(championship)
     
@@ -68,17 +68,17 @@ def fetch_results(championship, nome_arquivo):
     
     return existing_data
 
-def schedule_update(championship, file_name):
+def schedule_update(championship, name_db):
     """Final optimized function"""
-    print(f'\nBuscando resultados para {file_name}...')
+    print(f'\nBuscando resultados para {name_db}...')
     start_time = time()
     
     try:
-        matches = fetch_results(championship, file_name)
+        matches = fetch_results(championship, name_db)
         if matches is not None:
-            json_data.save_data(matches, file_name)
+            operations.save_data(matches, name_db)
     except Exception as e:
         print(f"Erro durante atualização: {str(e)}")
     finally:
-        print(f'Tempo total para {file_name}: {time() - start_time:.2f}s')
+        print(f'Tempo total para {name_db}: {time() - start_time:.2f}s')
         gc.collect()

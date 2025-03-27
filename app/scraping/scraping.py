@@ -76,10 +76,10 @@ def get_html(campeonato):
 
         # Elementos para clicar (com fallback silencioso)
         elements_to_click = [
-            (By.XPATH, '//button[span[text()="Sim"]]'),  # Aceitar cookies
-            (By.CSS_SELECTOR, 'button[type="button"]'),    # Fechar popup
-            (By.LINK_TEXT, liga),                          # Selecionar campeonato
-            (By.CSS_SELECTOR, "div[data-qa='virtuals-results-toggle-button']")  # Botão resultados
+            (By.XPATH, '//button[span[text()="Sim"]]'),  
+            (By.CSS_SELECTOR, 'button[type="button"]'),    
+            (By.LINK_TEXT, liga),                          
+            (By.CSS_SELECTOR, "div[data-qa='virtuals-results-toggle-button']") 
         ]
 
         for locator in elements_to_click:
@@ -95,7 +95,7 @@ def get_html(campeonato):
 
     except Exception as e:
         logging.error(f"Erro no scraping de {campeonato}: {str(e)}")
-        raise
+        raise e
     finally:
         if driver:
             driver.quit()

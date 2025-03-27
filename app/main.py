@@ -2,6 +2,7 @@ import asyncio
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.routes import router
+from app.db.database import init_db
 
 app = FastAPI(title= "Web Screping Api", version="1.0")
 
@@ -16,3 +17,5 @@ app.add_middleware(
 )
 
 app.include_router(router)
+
+init_db()

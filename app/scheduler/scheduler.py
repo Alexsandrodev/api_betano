@@ -5,24 +5,24 @@ from app.scraping import updater
 scheduler = BackgroundScheduler({
     'apscheduler.executors.default': {
         'class': 'apscheduler.executors.pool:ThreadPoolExecutor',
-        'max_workers': 2
+        'max_workers': 1
     },
     'apscheduler.job_defaults.coalesce': True,
     'apscheduler.job_defaults.max_instances': 1
 })
 
-for i, championships in enumerate(game_data.championships):
+for i, championships in enumerate(game_data.championships_names):
     minutos_attr = f"minutos{championships.replace(' ', '')}"
     minutos = getattr(game_data, minutos_attr, [])
     if not minutos:
         continue  
     
     scheduler.add_job(
-        updater.agendamento_atualizacao,
+        updater.schedule_update,
         'cron',
         minute=','.join(map(str, minutos)),
         second=40,
-        args=[championships, f"{championships.lower().replace(' ', '_')}.json"],
+        args=[championships, championships],
         executor='default',
         misfire_grace_time=120,
         name=f"job_{championships}"
